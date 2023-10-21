@@ -22,10 +22,9 @@ nav a {
     color: #fff;
     font-size: 16px;
 }
-
 main .content {
     display: flex;
-    flex-direction: column; /* Stack content vertically on narrow screens */
+    justify-content: space-between;
     padding: 20px;
 }
 .content a {
@@ -33,67 +32,37 @@ main .content {
     color: black;
     font-size: 16px;
 }
-
-/* Responsive Styles for Mobile */
-@media (max-width: 767px) {
-    nav {
-        flex-direction: column; 
-    }
-    nav a {
-        margin-bottom: 10px;
-    }
-    .content section {
-        width: 100%; 
-    }
-    .content aside {
-        width: 100%; 
-    }
-}
-
-/* Responsive Styles for Tablet */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .info {
-        flex-direction: column; 
-    }
-    .content section {
-        width: 70%; 
-    }
-    .content aside {
-        width: 30%; 
-}
-}
-
-
-
-.info {
+.info{
     display: flex;
     margin-bottom: 20px;
 }
-
 .content ul {
     list-style-type: none;
 }
-
-.content p {
+.content section{
+    width: 80%;
+}
+.content aside{
+    width: 20%;
+}
+.content p{
     margin-left: 10px;
 }
-
 table {
+    
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-}
-
+    }
 th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-}
-
+    }
 th {
     background-color: #333;
     color: #fff;
-}
+    }
 
 footer {
     background-color: #333;
